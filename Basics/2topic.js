@@ -41,4 +41,33 @@ console.log(splitedpart[0]);
 
 // Numbers
 
+const balance = new Number(100);
 
+console.log(balance.toFixed(2)); 
+
+console.log(balance.toString()); // converted to strings
+
+const currency = 100000
+
+console.log(currency.toLocaleString('en-IN'));
+
+console.log((Math.random() * 10 ) + 1); // avoid giving 0.01247463
+
+console.log(Math.floor(Math.random() * 10) + 1);
+
+// u can also give minimum n maximum number for random number between them
+
+const max = 20;
+const min = 10
+
+console.log(Math.floor(Math.random() * (max - min + 1) + min));
+
+
+// date and time 
+
+const date = new Date();
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+console.log(date.getDay());
+console.log(date.getMonth());
