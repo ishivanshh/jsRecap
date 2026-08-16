@@ -53,3 +53,6 @@ function handleArray (getArray){
     console.log(`this is my marks in 1st sem :  ${getArray[1]}`)
 }
 handleArray(myarr1);
+
+
+// scope and arrow function
