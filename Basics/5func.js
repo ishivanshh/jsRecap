@@ -56,3 +56,54 @@ handleArray(myarr1);
 
 
 // scope and arrow function
+
+let a = 122;
+const username = "shivansh";
+
+if(true){
+    let a = 211
+    const username = "jaya"
+    console.log("Inner : ", username)
+}
+
+console.log(username);
+console.log(a);
+
+
+// nested scope => inside function can access outside function variables because for inside function outside one is global, const but inside can not access 
+
+
+function one(){
+    const username = "shivi-saxena"
+
+    function two(){
+        const instId = 1231 
+        console.log(username) // can access 
+    }
+    // console.log(instId); // can not access 
+
+    two()
+}
+
+one();
+
+
+// hoisting of function
+
+userinfo(1);
+
+function userinfo(num){
+    return num + 123
+}
+
+// but if we call this function before it has made it will not give error 
+
+
+userDetials(12); // given error
+
+const userDetials = function users1(num1){
+    return num1+221
+}
+
+
+// but when we call this function before function it will give error(declarion of function should be first)
