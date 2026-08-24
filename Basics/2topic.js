@@ -7,7 +7,18 @@ const address = (`hey, im shivansh a ${year}th year btech student`)
 
 console.log(address);
 console.log(typeof address); // string
+/*
+No, strings in JavaScript are primitive values, not objects. However, they act like objects when you call methods on them because JavaScript uses a mechanism called autoboxing (or primitive wrappers)."
+const primitiveStr = "hello";
+const objectStr = new String("hello");
 
+console.log(typeof primitiveStr); // "string" (Primitive)
+console.log(typeof objectStr);    // "object"  (String object constructor)
+
+
+console.log(primitiveStr === "hello"); // true
+console.log(objectStr === "hello");    // false (Object reference vs Primitive value)
+ */
 
 const name = new String("shivansh");
 console.log(name[0]); // strings are object thats why can access like this.
