@@ -30,6 +30,7 @@ console.log(user1);
 user1.greeting = function(){
     console.log("heelo from function")
 }
+console.log(user1);
 // console.log(user1.greeting());
 
 // accessing values in user1 
@@ -70,3 +71,8 @@ const course = {
     courseInstructor : "shivansh"
 }
 
+console.log(course.price); // not good approch
+
+// "Take the price property from course and create a variable called price containing its value."
+const {price} = course;
+console.log(price);

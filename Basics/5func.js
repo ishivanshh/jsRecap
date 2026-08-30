@@ -20,7 +20,7 @@ console.log(`addition of 2 numbers : ${result}`);
 // lets take example of shopping cart the way we add add products it adds again and again
 
 function calculateCartValue (...nums) {
-    return nums
+    return nums;
 }
 // [ 200, 300, 400, 500, 600 ] now u can apply any method to calculate the total using loops or reduce function
 
@@ -39,8 +39,8 @@ const users1 = {
 }
 
 function handleObject (anyObject){
-    console.log(`this is my emailid ${anyObject.email}`)
-    console.log(`this is my emailid ${anyObject.email}`)
+    console.log(`this is my emailid ${anyObject.email}`);
+    console.log(`this is my emailid ${anyObject.email}`);
 }
 
 console.log(handleObject(users));
@@ -59,7 +59,7 @@ handleArray(myarr1);
 
 let a = 122;
 const username = "shivansh";
-
+// scope creates everything on its own there value remains same inside it.
 if(true){
     let a = 211
     const username = "jaya"
@@ -93,16 +93,16 @@ one();
 userinfo(1);
 
 function userinfo(num){
-    return num + 123
+    console.log(`${num +121}`);
 }
 
 // but if we call this function before it has made it will not give error 
 
 
-userDetials(12); // given error
+//. userDetials(12); // given error
 
 const userDetials = function users1(num1){
-    return num1+221
+    console.log("num1+221");
 }
 
 

@@ -50,15 +50,19 @@ const realarr = [1,2,3,[4,5,6],5,[1,3,[4,1]]];
 console.log(realarr.flat(Infinity)); // combine all them in single level
 
 const name = "shivi";
+
+// Array.of() → take these values and put them into an array.
 console.log(Array.of(name)); // [ 'shivi' ]
+
+// Array.from() is used to create an array from an iterable or array-like object.
 console.log(Array.from(name)); // [ 's', 'h', 'i', 'v', 'i' ]
 
 const isloggedin = false;
-console.log(Array.of(isloggedin));
+console.log(Array.of(isloggedin)); // putted in array
 
 let score1 = 100
 let score2 = 101
 let score3 = 112
 
 const combo = Array.of(score1,score2,score3);
-console.log(combo[1]);
+console.log(combo); // created as array. use it like object
