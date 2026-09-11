@@ -52,6 +52,10 @@ console.log(val);
 let val2;
 val2 = null ?? 1;
 console.log(val2); 
+// if starting value are not null / undefined it will print.
+let val3;
+val3 = 15 ?? 12 ?? null;
+console.log(val3);
 
 // TERNINARY OPERATOR.
 
