@@ -106,3 +106,44 @@ const mappedNum = myNumbers
                     .map( (num) => num + 1)
                     .filter((num) => num > 40);
 console.log(mappedNum);
+
+
+// reduce method (specially used in shopping cart making and react also)
+
+const myNumbers1 = [1,2,3,4,5]
+
+const CombinedNum = myNumbers1.reduce( function (acc , currval) {
+  // console.log("accumulator " ,acc , "currentValue " , currval);
+  return acc + currval
+}, 3)
+
+// console.log(CombinedNum);
+
+// now using arrow function
+
+const myTotalSum = myNumbers1.reduce((acc , currval ) => acc + currval , 0)
+// console.log(myTotalSum);
+
+// shopping card example......
+
+const shoppingCart = [
+  {
+    itemNumber : "js course",
+    price : 2322
+  },
+  {
+    itemNumber : "data science-course",
+    price : 2311
+  },
+  {
+    itemNumber : "python crash corse",
+    price : 1999
+  },
+  {
+    itemNumber : "wellfound acc",
+    price : 123
+  },
+]
+
+const totalPrice = shoppingCart.reduce((acc, currentPrice) => acc + currentPrice.price , 0)
+console.log(totalPrice);
