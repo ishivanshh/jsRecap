@@ -11,12 +11,32 @@
         }
     </style>
 </head>
-<body  class="bg-black">
-    <div>
-        <h1 id="title">
-            DOM Learning on vs code by shivansh 
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis nesciunt quos laudantium, sit expedita beatae unde? Repudiandae, eligendi amet.</p>
+<body  class="bg-black ; color : white">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day1">tuesday</div>
+        <div class="day2">wednesday</div>
+        <div class="day3">sunday</div>
     </div>
 </body>
+<script>
+
+    const parentDiv = document.querySelector('.parent')
+    // console.log(parentDiv);
+    // console.log(parentDiv.children);
+    // console.log(parentDiv.children[1].innerHTML);
+
+
+    parentDiv.children[1].style.color = "orange"
+    // console.log(parentDiv.firstElementChild)
+    // console.log(parentDiv.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    // console.log(dayOne.parentElement)
+    // console.log(dayOne.nextElementSibling)
+
+    // console.log("NODES : " , parentDiv.childNodes) // important 
+
+</script>
 </html>
