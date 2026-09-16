@@ -12,16 +12,36 @@
 </body>
 <script>
 
-    function addLanguages(topa){
-        const li = document.createElement("li");
-        const list = document.querySelector("ul");
-        const addText = document.createTextNode(topa)
-        li.appendChild(addText);
-        list.appendChild(li)
-    }
+    // function addLanguages(topa){
+    //     const li = document.createElement("li");
+    //     const list = document.querySelector("ul");
+    //     const addText = document.createTextNode(topa)
+    //     li.appendChild(addText);
+    //     list.appendChild(li)
+    // }
    
-   addLanguages("Python")
-   addLanguages("C++")
-   addLanguages("DSA")
+    // addLanguages("Python")
+    // addLanguages("C++")
+    // addLanguages("DSA")
+
+    // same function but optimized function : dont use innerhtml do offen u can use appendchild.
+
+    function addOptiLanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("golang")
+    addOptiLanguage("html")
+
+
+    // edit any child use replace with
+    const firstlanguag = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement("li")
+    newLi.textContent = "mojo"
+    firstlanguag.replaceWith(newLi);
+    
+
+    
 </script>
 </html>
